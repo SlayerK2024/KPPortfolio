@@ -1,0 +1,15 @@
+.resume {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.resume h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.resume p {
+    font-size: 1rem;
+    line-height: 1.5;
+}

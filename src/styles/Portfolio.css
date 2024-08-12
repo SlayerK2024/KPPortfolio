@@ -1,0 +1,24 @@
+.projects {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projects .project {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects .project img {
+    max-width: 100%;
+    height: auto;
+}
