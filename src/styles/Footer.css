@@ -8,3 +8,15 @@ footer {
 footer p {
     margin: 0;
 }
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  footer ul li img {
+    width: 24px;
+    height: 24px;
+  }
