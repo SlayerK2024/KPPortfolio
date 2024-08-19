@@ -1,38 +1,31 @@
 import React, { useState } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import AboutMe from './components/AboutMe';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
+import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [currentSection, setCurrentSection] = useState('AboutMe');
-
-  const renderSection = () => {
-    switch (currentSection) {
-      case 'AboutMe':
-        return <AboutMe />;
-      case 'Portfolio':
-        return <Portfolio />;
-      case 'Contact':
-        return <Contact />;
-      case 'Resume':
-        return <Resume />;
-      default:
-        return <AboutMe />;
-    }
-  };
-
+  
   return (
-    <div className="App">
-      <Header currentSection={currentSection} setCurrentSection={setCurrentSection} />
-      <main>
-        {renderSection()}
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<Home/>} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

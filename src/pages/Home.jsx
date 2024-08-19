@@ -1,17 +1,16 @@
 import React from 'react';
-import AboutMe from '../components/AboutMe';
-import Portfolio from '../components/Portfolio';
-import Contact from '../components/Contact';
-import Resume from '../components/Resume';
+import '../styles/Home.css';
+
 
 function Home() {
   return (
-    <div>
-      <AboutMe />
-      <Portfolio />
-      <Contact />
-      <Resume />
-    </div>
+    <main>
+      <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Your journey to excellence starts here.</p>
+    <a href="aboutme" class="cta-button">Learn More</a>
+</section>
+    </main>
   );
 }
 

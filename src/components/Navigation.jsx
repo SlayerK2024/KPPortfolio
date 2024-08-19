@@ -1,15 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const Navigation = () => (
-  <nav>
-    <ul>
-      <li><NavLink to="#about" activeClassName="active">About Me</NavLink></li>
-      <li><NavLink to="#portfolio" activeClassName="active">Portfolio</NavLink></li>
-      <li><NavLink to="#contact" activeClassName="active">Contact</NavLink></li>
-      <li><NavLink to="#resume" activeClassName="active">Resume</NavLink></li>
-    </ul>
-  </nav>
-);
+const Navigation = () => {
+    return (
+        <nav>
+            <Link to="/aboutme">About Me</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/resume">Resume</Link>
+            <Link to="/contact">Contact</Link>
+            
+        </nav>
+    );
+};
 
 export default Navigation;
+

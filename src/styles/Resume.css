@@ -1,15 +1,55 @@
 .resume {
     padding: 2rem;
-    background: #fff;
-    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(247, 244, 244, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .resume h2 {
-    font-size: 2rem;
+    text-align: center;
     margin-bottom: 1rem;
+    color: #333;
 }
 
 .resume p {
-    font-size: 1rem;
-    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.resume a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.resume a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+.resume p, .resume li {
+    line-height: 1.6;
+}
+.resume ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resume li {
+    margin-bottom: 1rem;
+}
+
+.resume li ul {
+    margin-top: 0.5rem;
+    padding-left: 20px;
+}
+
+.resume li ul li {
+    margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+    .resume {
+        padding: 1rem;
+    }
 }
