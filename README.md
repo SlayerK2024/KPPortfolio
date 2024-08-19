@@ -1,8 +1,13 @@
-# React + Vite
+# KPPortfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page React portfolio of work samples that potential employers can use
 
-Currently, two official plugins are available:
+ to assess whether Im a good candidate for an open position
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshots & Link
+
+https://netify-deployment-app.netlify.app/
+
+![Screenshot_19-8-2024_141611_netify-deployment-app netlify app](https://github.com/user-attachments/assets/0390a065-b30c-4737-8739-43eb4d5c35b9)
+
+
